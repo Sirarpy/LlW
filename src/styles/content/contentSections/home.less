@@ -1,0 +1,87 @@
+@dark-blue: #2d3f54;
+@light-blue: rgb(16, 177, 179);
+@white: #fff;
+
+.font-face(@font-family, @filepath, @font-weight, @font-style ) {
+  @font-face {
+    font-family: @font-family;
+    src: url("@{filepath}.ttf") format("trueType");
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+// .font-face(Lato-bold, "../../../fonts/Lato/Lato-Bold", 400, normal);
+.font-face(OpenSans-bold, "../../../fonts/Open_Sans/OpenSans-Bold", 400, normal);
+.font-face(OpenSans-reg, "../../../fonts/Open_Sans/OpenSans-Regular", 400, normal);
+
+.button {
+  background-color: @light-blue;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: @white;
+  border: none;
+  width: 30%;
+  height: 60px;
+  display: block;
+  cursor: pointer;
+  &:hover{
+  background-color: @dark-blue;}
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px auto;
+  color: @dark-blue;
+  font-family: "OpenSans-reg";
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .home-left {
+    p {
+      padding-bottom: 20px;
+    }
+    p:nth-child(1) {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p:nth-child(5) {
+      font-weight: bold;
+    }
+    p{
+    @media (max-width: 768px) {
+            font-size: 2vw;
+          }
+          @media (max-width: 468px) {
+            font-size: 4vw;
+          }
+    }
+    h2 {
+      font-family: "OpenSans-bold";
+      font-size: 60px;
+      text-transform: capitalize;
+      @media (max-width: 768px) {
+        font-size: 6vw;
+      }
+    }
+    button {
+      .button();
+      @media (max-width: 768px) {
+            margin: auto;
+            margin-bottom: 20px;
+            width: 40%;
+            font-size: 3vw;
+          }
+    }
+  }
+  .home-right{
+  @media (max-width: 768px) {
+    img{
+      width: calc( 100% / 3 );
+    }
+  }
+  }
+}

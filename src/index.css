@@ -1,0 +1,19 @@
+@import "./styles/header/header.css";
+@import "./styles/footer/footer.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li, a{
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+}
+.row {
+  width: 80%;
+  margin: auto;
+}

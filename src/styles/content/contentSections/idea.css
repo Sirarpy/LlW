@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Lato;
+  src: url("../../../fonts/Lato/Lato-Regular.ttf");
+}
+@media (max-width: 768px) {
+  .idea_itemsMedia {
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 576px) {
+  .idea_itemsMedia {
+    width: 100%;
+    float: none;
+  }
+}
+#idea {
+  background-image: url("../../../images/content/bg02.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  color: #fff;
+  font-family: Lato;
+  text-align: center;
+  padding: 50px 0;
+  background-attachment: fixed;
+}
+#idea .idea-heading p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#idea .idea-heading h3 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #idea .idea-heading h3 {
+    font-size: 6vw;
+  }
+}
+#idea .idea-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #idea .idea-items {
+    flex-direction: column;
+  }
+}
+#idea .idea-items img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #idea .idea-items img {
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 576px) {
+  #idea .idea-items img {
+    width: 100%;
+    float: none;
+  }
+}
+#idea .idea-items .idea-text {
+  padding: 0 5px;
+}
+#idea .idea-items .idea-text h4 {
+  font-size: 30px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+#idea .idea-items .idea-text h4:hover {
+  color: #10b1b3;
+}
+@media (max-width: 576px) {
+  #idea .idea-items .idea-text h4 {
+    font-size: 20px;
+  }
+}
+#idea .idea-items .idea-text .more {
+  text-transform: uppercase;
+  margin-top: 20px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #idea .idea-items .idea-text {
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 576px) {
+  #idea .idea-items .idea-text {
+    width: 100%;
+    float: none;
+  }
+}
+#idea .idea-items .idea-item1,
+#idea .idea-items .idea-item3 {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 3px solid #9c9fa1;
+  padding-bottom: 30px;
+}
+#idea .idea-items .idea-item2 {
+  background: rgba(15, 173, 178, 0.1);
+  border-bottom: 3px solid #1a767b;
+  padding-bottom: 30px;
+}
