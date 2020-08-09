@@ -1,23 +1,25 @@
 import React, { Component } from "react";
-import { ReactNavbar } from "react-responsive-animate-navbar";
+// import { ReactNavbar } from "react-responsive-animate-navbar";
 
 class Header extends Component {
+  home = null;
+
   render() {
     return (
       <header>
-        <div className="top-header row">
+        <div className="top-header row" key="header">
           <div className="logo">
             <p>
               <span>life</span> <br /> is<span>w</span>ild
             </p>
           </div>
-          <div className="menu">
+          <div className="menu" key="menu">
             {/* <div className="mobile-toggle">
               <button type="button">&#9776;</button>
               <button type="button">&#88;</button>
             </div> */}
-            <nav className="main-menu" id="nav">
-{/*             
+            <nav className="main-menu" id="nav" key='nav'>
+              {/*             
               <ul>
                 <li>
                   <a className="active" href="index.html">
@@ -27,18 +29,20 @@ class Header extends Component {
                 <li>
                   <a href="index.html">About</a>
                 </li>
+
                 <li>
                   <a href="index.html">contact</a>
                 </li>
               </ul> */}
 
-              <ReactNavbar
+              {/* <ReactNavbar
                 menu={[
-                  { name: "HOME", to: "/" },
-                  { name: "ABOUT", to: "/" },
-                  { name: "CONTACT", to: "/" },
+                  {name: "HOME", to: "/#home" },
+                  { name: "ABOUT", to: "/#about" },
+                  { name: "IDEAS", to: "/#idea" },
+                  { name: "CONTACT", to: "/#contact" },
                 ]}
-              />      
+              /> */}
             </nav>
           </div>
         </div>
@@ -53,5 +57,4 @@ class Header extends Component {
     );
   }
 }
-
 export default Header;

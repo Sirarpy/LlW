@@ -70,12 +70,9 @@ header .top-header .menu nav ul li {
   }
 }
 header .top-header .menu nav ul li a {
-  color: #fff;
-  text-transform: uppercase;
   padding: 2vw 1vw;
-  display: flex;
   position: relative;
-  font-size: 14px;
+  font-size: 20px;
 }
 header .top-header .menu nav ul li a:after {
   content: " ";
@@ -150,4 +147,14 @@ header .header-banner button {
 }
 .MobileNav_MoNavLinks__mNUdF li {
   border-bottom: none !important;
+}
+.styles_navLinks__38tON li a:hover {
+  border: none !important;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+@media (max-width: 768px) {
+  .MobileNav_MoNavLinks__mNUdF li {
+    padding: 10px;
+  }
 }

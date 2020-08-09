@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Sirarpy.github.io/LifeIsWild",
-  "name": "life",
+  "homepage": "http://Sirarpy.github.io/LIW",
+  "name": "liw",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,8 +15,8 @@
     "use-places-autocomplete": "^1.3.10"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
